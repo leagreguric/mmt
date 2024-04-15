@@ -1,0 +1,337 @@
+<script setup>
+import './styles/style.css'
+import Obrazovanje from '../Lea/Obrazovanje.vue'
+import Projekti from '../Lea/Projekti.vue';
+</script>
+
+
+
+
+
+<template>
+   <div class="container">
+      <div class="left">
+         <div class="name"><h1>Lea Gregurić</h1></div>
+         <div class="about-me">
+            <div class="audio">
+               <audio controls>
+  <source src="../../assets/WhatsApp Audio 2024-04-07 at 19.25.11.mp4" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+            </div>
+            <div class="contact-container">
+
+<div class="contact">
+   <h3 id="title">
+      KONTAKT
+   </h3>
+   <ul>
+      <li>Mobitel: 0998651666</li>
+      <li>E-mail: lea.lea.greguric@gmail.com</li>
+      <li><a href="https://github.com/leagreguric">GitHub: https://github.com/leagreguric</a></li>
+   </ul>
+</div>
+</div>
+            
+         </div>
+
+      <div class="education-container">
+         <div class="education">
+            <h3 id="title">
+               <RouterLink to="/leagreguric/obrazovanje">OBRAZOVANJE</RouterLink>
+            </h3>
+            <ul>
+               <li>
+                  <a href="http://www.os-banova-jaruga.skole.hr/">Osnovna škola Banova Jaruga</a>
+               </li>
+               <li>
+                  <a href="http://ss-tujevica-kt.skole.hr/"> Srednja škola Tina Ujevića Kutina, Prirodoslovno-matematička gimnazija</a>              
+               </li>
+               <li>
+                  <a href="https://www.ferit.unios.hr/">FERIT Osijek, stručni studij Računarstva</a>                
+               </li>
+
+            </ul>
+            
+         </div>
+      </div>
+      <div class="skills-container">
+         <div class="skills">
+
+            <ul>
+               <li>
+                  Programski jezici: C, C#, Java, Python, HTML/CSS, JavaScript, PHP
+               </li>
+               <li>
+                  Frameworks: Django, Spring, Vue.js
+               </li>
+               <li>
+                  Rad s bazama podataka: SQL (MySql, PostgreSQL), LDAP (Ldaptive)
+               </li>
+               <li>
+                  Poznavanje rada u Linuxu
+               </li>
+               <li>
+                  Docker
+               </li>
+               <li>
+                  Git
+               </li>
+               <li>
+                  REST API
+               </li>
+             
+            </ul>
+            <h3 id="title">
+               ZNANJA I VJEŠTINE
+            </h3>
+         </div>
+      </div>
+   </div>
+      <div class="right">
+         <div class="image-container">
+            <img src="../../assets/20231011_133254.jpg" id="slika">
+      </div>
+      
+         <div class="info">
+            <ul>
+               <li>
+                  Datum rođenja: 12.07.2000.
+               </li>
+               <li>
+                  Mjesto rođenja: Zagreb
+               </li>
+               <li>
+                  Mjesto stanovanja: Osijek
+               </li>
+            </ul>
+         </div>
+         <div class="experience-container">
+         <div class="experience">
+            <h3>RADNO ISKUSTVO</h3>
+            <ul>
+               <li>
+                  Stručna praksa u <a href="https://www.enea.com/">Enea</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="project-container">
+         <div class="project">
+            <h3><RouterLink to="/leagreguric/projekti">PROJEKTI</RouterLink></h3>
+            <ul>
+               <li>
+                  HandGestureRecognition
+               </li>
+               <li>
+                  Cas-Simo
+               </li>
+               <li>
+                  Subscription-app
+               </li>
+            </ul>
+
+         </div>
+      </div>
+      </div>
+      
+   </div>
+
+
+</template>
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1100px;
+
+}
+
+.left{
+    
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #ffdad8, #d29696);
+    width: 60%;
+    border-right: 2px solid #C69A5D ;
+    gap: 20px;
+
+}
+
+.name{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    color: #C69A5D;
+
+}
+
+.right{
+    
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom,	#efc2c2,#ffdad8);;
+    width: 40%;
+    gap: 20px;
+
+}
+
+*{
+    margin: 0;
+}
+
+
+
+
+
+.contact{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #8A6B41;
+    margin-right: 10px;
+    gap:20px;
+    padding: 10px;
+    margin-left: auto;
+}
+
+
+
+
+
+.education{
+    font-size: 20px;
+    color: #8A6B41;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 300px;
+    gap:20px;
+    padding: 10px;
+}
+
+.skills {
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: #8A6B41;
+    width: 50%;
+    gap: 20px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+ #title{
+    font-size: 30px;
+}
+
+
+
+.contact, .education, .skills {
+    border-radius: 10px;
+    background-color: #ffdad8;
+}
+
+.contact:hover, .education:hover, .skills:hover{
+    background-color: #d9bdbd;
+}
+
+.contact-container,.education-container, .skills-container {
+    transition: transform 0.3s ease; 
+
+
+}
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.audio{
+    padding: 10px;
+}
+
+.contact-container:hover,.education-container:hover, .skills-container:hover {
+    transform: scale(1.02); 
+}
+
+.image-container {
+    margin-top: 15px;
+    display: flex;
+    align-self: center  ;
+    width: 200px;
+    height: auto;
+  }
+  
+  #slika {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .info{
+    font-size: 20px;
+    display: flex;
+    align-self: center;
+    color: #8A6B41;
+    margin-right: 10px;
+    gap:20px;
+    padding: 10px;
+}
+
+.experience{
+    font-size: 20px;
+    color: #8A6B41;
+    display: flex;
+    align-items: center;
+    align-self: left;
+    margin-left: 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: right;
+    font-size: 20px;
+    padding: 20px;
+    color: #8A6B41;
+    margin-left: 200px;
+
+}
+
+
+ .experience, .project {
+    border-radius: 10px;
+    background-color: #ffdad8;
+}
+
+.experience:hover, .project:hover{
+    background-color: #d9bdbd;
+}
+
+.experience-container, .project-container
+{
+    transition: transform 0.3s ease; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.experience-container:hover, .project-container:hover {
+    transform: scale(1.02); 
+}

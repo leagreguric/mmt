@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Pridi:wght@200;300;400;500;600;700&family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Pridi:wght@200;300;400;500;600;700&family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yarndings+20&display=swap');
+
+*{
+    margin:0;
+    background-color: #e0d9d6;
+
+}
+
+
+
+#txt{
+    color:blue;
+    font-family: "Pridi", serif;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #e0d9d6;
+
+}
+
+#name{
+    margin-left: 15px;
+    font-family: "Bungee", sans-serif;
+    font-size: 80px;
+}
+
+#title{
+    font-size:40px ;
+    text-decoration: #FC0FC0 wavy underline;
+}
+#url
+     {
+        text-decoration: none; 
+        color:#0000B7;
+    }
+    
+#url:hover{
+    color:#069d06;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    justify-content: space-between;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: 25px;
+}
+
+.info{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    border: 4px dashed #00EE00;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke;
+    align-self: flex-end;
+    height: 450px;
+    width: 350px;
+    margin-right: 200px;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color:#444444;
+}
+
+.audio{
+    margin-top: 25px;
+}
+
+img{
+    height: 350px;
+    border-radius: 20px;
+}
+
+.image{
+    background-color:whitesmoke;    
+}
+
+#list{
+    background-color:whitesmoke;
+}
+
+
+.work{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 4px dashed #00EE00;
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+}
+.row-1,.row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.project-container{
+    margin-right: 300px;
+}
+
