@@ -1,5 +1,4 @@
 <script setup>
-import './styles/projekti.css';
 import './scripts/projekti.js';
 import Footer from '../Footer/Footer.vue';
 import Project from '../Project/Project.vue';
@@ -11,7 +10,7 @@ import lea from "../../assets/20231011_133254.jpg"
 
 <template>
     <div class="container">
-      <h1 id="name">PROJEKTI</h1>
+      <h1 id="name">PROJEKTI <h2 id="name"><RouterLink to="/leagreguric">Lea</RouterLink> </h2></h1>
       <div class="projects-container-container">
         <Project
         title="HAND GESTURE RECOGNITION"
