@@ -1,49 +1,55 @@
 <script setup>
 import './styles/projekti.css';
 import './scripts/projekti.js';
+import Footer from '../Footer/Footer.vue';
+import Project from '../Project/Project.vue';
 import { ref } from 'vue';
 const hexMoved = ref(false);
 const subtextVisible = ref([false, false, false]);
+import lea from "../../assets/20231011_133254.jpg"
 </script>
 
 <template>
-    <body onload="draw()">
-    <canvas id="bg"></canvas>
-    <main id="content">
-        <h1>
-            <div class="hex moved"></div><span>PRROJEKTI</span></h1>
-
-        <h2>
-            <div class="hex"></div><span> HandGestureRecognition</span></h2>
-        <div class="subtext coll">
-            Ovaj projekt je implementacija sustava za prepoznavanje gestikulacija ruku pomoću tehnologija strojnog učenja. Cilj projekta je omogućiti računalima da prepoznaju i interpretiraju gestikulacije ruku, što može imati široku primjenu u raznim područjima kao što su upravljanje sučeljem, virtualna stvarnost, robotika, i slično.
-            <div class="image"><img src="../../assets/20231011_133254.jpg" id="slika"></div>
-        </div>
-        <h2>
-            <div class="hex"></div><span>Cas-Simo</span></h2>
-        <div class="subtext coll">
-            "Cas-Simo" ima za cilj ponuditi korisnicima dinamično i sigurno online okruženje za sudjelovanje u raznim igrama na sreću, uključujući casino igre i druge aktivnosti klađenja. Opseg ovog projekta obuhvaća interakcije korisnika, funkcionalnosti sustava i očekivanja korisnika vezana uz platformu za online kockanje.
-            <div class="image"><img src="../../assets/20231011_133254.jpg" id="slika"></div>
-        </div>
-        <h2>
-            <div class="hex"></div><span> Subscription-app</span></h2>
-        <div class="subtext coll">
-          
-        </div>
-        
-    </main>
-
-</body>
+    <div class="container">
+      <h1 id="name">PROJEKTI</h1>
+      <div class="projects-container-container">
+        <Project
+        title="HAND GESTURE RECOGNITION"
+        description="    Ovaj projekt je implementacija sustava za 
+                prepoznavanje gestikulacija ruku pomoću tehnologija 
+                strojnog učenja. Cilj projekta je omogućiti računalima
+                 da prepoznaju i interpretiraju gestikulacije ruku, što može imati široku primjenu u raznim područjima kao što su upravljanje sučeljem, virtualna stvarnost, robotika, i slično.
+            "
+        :imageUrl="lea"
+        url="https://github.com/leagreguric/HandGestureRecognition"
+        ></Project>
+        <Project
+        title="HAND GESTURE RECOGNITION"
+        description="    Ovaj projekt je implementacija sustava za 
+                prepoznavanje gestikulacija ruku pomoću tehnologija 
+                strojnog učenja. Cilj projekta je omogućiti računalima
+                 da prepoznaju i interpretiraju gestikulacije ruku, što može imati široku primjenu u raznim područjima kao što su upravljanje sučeljem, virtualna stvarnost, robotika, i slično.
+            "
+        :imageUrl="lea"
+        url="https://github.com/leagreguric/HandGestureRecognition"
+        ></Project>
+        <Project
+        title="HAND GESTURE RECOGNITION"
+        description="    Ovaj projekt je implementacija sustava za 
+                prepoznavanje gestikulacija ruku pomoću tehnologija 
+                strojnog učenja. Cilj projekta je omogućiti računalima
+                 da prepoznaju i interpretiraju gestikulacije ruku, što može imati široku primjenu u raznim područjima kao što su upravljanje sučeljem, virtualna stvarnost, robotika, i slično.
+            "
+        :imageUrl="lea"
+        url="https://github.com/leagreguric/HandGestureRecognition"
+        ></Project>
+      </div>
+      </div>
+      <Footer></Footer>
 </template>
 
 <script>
 import { onMounted } from 'vue';
-
-onMounted(() => {
-  draw();
-  document.getElementById('content').style.opacity = '1';
-  document.getElementById('content').style.marginTop = '0';
-});
 
 function draw() {
   const canvas = this.$refs.canvas;

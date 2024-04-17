@@ -2,6 +2,7 @@
 import './styles/style.css'
 import Obrazovanje from '../Lea/Obrazovanje.vue'
 import Projekti from '../Lea/Projekti.vue';
+import Footer from '../Footer/Footer.vue';
 </script>
 
 
@@ -27,12 +28,12 @@ import Projekti from '../Lea/Projekti.vue';
    </ul>
    <div class="audio">
                <audio controls>
-  <source src="../../assets/WhatsApp Audio 2024-04-07 at 19.25.11.mp4" type="audio/mpeg">
+  <source src="../../assets/lea.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
       </div>
             </div>
-
+            <RouterLink to="/leagreguric/projekti" class="router-button">MOJI PROJEKTI</RouterLink>
    </div>
       <div class="image-container">
          <div class="image"><img src="../../assets/20231011_133254.jpg" id="slika"></div>
@@ -54,7 +55,7 @@ import Projekti from '../Lea/Projekti.vue';
          <div class="education-container">
          <div class="education">
             <h3 id="title">
-               <RouterLink to="/leagreguric/obrazovanje" id="url">OBRAZOVANJE</RouterLink>
+               OBRAZOVANJE
             </h3>
             <ul>
                <li>
@@ -120,26 +121,15 @@ import Projekti from '../Lea/Projekti.vue';
       </div>
       <div class="project-container">
          <div class="project">
-            <h3 id="title"><RouterLink to="/leagreguric/projekti" id="url" >PROJEKTI</RouterLink></h3>
-            <ul>
-               <li>
-                  HandGestureRecognition
-               </li>
-               <li>
-                  Cas-Simo
-               </li>
-               <li>
-                  Subscription-app
-               </li>
-            </ul>
-
+            <h3 id="title"></h3>
          </div>
       </div>
 
       </div>
    </div>
-
+   <Footer></Footer>
 </div>
+
 
 
 </template>
