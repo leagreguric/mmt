@@ -9,7 +9,7 @@ import lea from "../../assets/20231011_133254.jpg"
 
 <template>
     <div class="container">
-      <h1 id="name">PROJEKTI <h2 id="name"><RouterLink to="/leagreguric">Lea</RouterLink> </h2></h1>
+      <h1 id="name">PROJEKTI <h2 id="name"><RouterLink to="/marijagrgic">Marija</RouterLink> </h2></h1>
       <div class="projects-container-container">
         <Project
         title="HAND GESTURE RECOGNITION"
@@ -45,3 +45,4 @@ import lea from "../../assets/20231011_133254.jpg"
       </div>
       <Footer></Footer>
 </template>
+

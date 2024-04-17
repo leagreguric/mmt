@@ -1,6 +1,6 @@
 <script setup>
 import './styles/style.css'
-import Projekti from '../Lea/Projekti.vue';
+import Projekti from '../Marija/Projekti.vue';
 import Footer from '../Footer/Footer.vue';
 </script>
 
@@ -14,34 +14,34 @@ import Footer from '../Footer/Footer.vue';
    <div class="about">
       
       <div class="info-container">
-         <h1 id="name">LEA GREGURIĆ</h1>
+         <h1 id="name">MARIJA GRGIĆ</h1>
       <div class="info">
          
          <h3 id="title">
       KONTAKT
    </h3>
    <ul>
-      <li>Mobitel: 0998651666</li>
-      <li>E-mail: lea.lea.greguric@gmail.com</li>
-      <li><a id="url" href="https://github.com/leagreguric">GitHub: https://github.com/leagreguric</a></li>
+      <li>Mobitel: 0981381514</li>
+      <li>E-mail: grgicmarija53@gmail.com</li>
+      
    </ul>
    <div class="audio">
                <audio controls>
-  <source src="../../assets/lea.mp3" type="audio/mpeg">
+  <source src="../../assets/WhatsApp Audio 2024-04-07 at 19.25.11.mp4" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
       </div>
             </div>
-            <RouterLink to="/leagreguric/projekti" class="router-button">MOJI PROJEKTI</RouterLink>
+
    </div>
       <div class="image-container">
-         <div class="image"><img src="../../assets/20231011_133254.jpg" id="slika"></div>
+         <div class="image"><img src="../../assets/190221629_6138262659520843_5634576881009444184_n.jpg" id="slika"></div>
          <ul id="list">
                <li id="list">
-                  Datum rođenja: 12.07.2000.
+                  Datum rođenja: 06.03.2003.
                </li>
                <li id="list">
-                  Mjesto rođenja: Zagreb
+                  Mjesto rođenja: Vinkovci
                </li>
                <li id="list">
                   Mjesto stanovanja: Osijek
@@ -58,10 +58,10 @@ import Footer from '../Footer/Footer.vue';
             </h3>
             <ul>
                <li>
-                  <a id="url" href="http://www.os-banova-jaruga.skole.hr/">Osnovna škola Banova Jaruga</a>
+                  <a id="url" href="http://os-ikozarca-zu.skole.hr/">Osnovna škola Ivana Kozarca Županja</a>
                </li>
                <li>
-                  <a id="url" href="http://ss-tujevica-kt.skole.hr/"> Srednja škola Tina Ujevića Kutina, Prirodoslovno-matematička gimnazija</a>              
+                  <a id="url" href="http://gimnazija-zupanja.skole.hr/"> Gimnazija Županja, Opća gimnazija</a>              
                </li>
                <li>
                   <a id="url" href="https://www.ferit.unios.hr/">FERIT Osijek, stručni studij Računarstva</a>                
@@ -79,19 +79,16 @@ import Footer from '../Footer/Footer.vue';
 
             <ul>
                <li>
-                  Programski jezici: C, C#, Java, Python, HTML/CSS, JavaScript, PHP
+                  Programski jezici: C, Tyescript, Java, Python, HTML/CSS, JavaScript, PHP
                </li>
                <li>
-                  Frameworks: Django, Spring, Vue.js
+                  Frameworks: Django, Cypress, Vue.js
                </li>
                <li>
-                  Rad s bazama podataka: SQL (MySql, PostgreSQL), LDAP (Ldaptive)
+                  Rad s bazama podataka: SQL (MySql)
                </li>
                <li>
                   Poznavanje rada u Linuxu
-               </li>
-               <li>
-                  Docker
                </li>
                <li>
                   Git
@@ -113,22 +110,36 @@ import Footer from '../Footer/Footer.vue';
             <h3 id="title">RADNO ISKUSTVO</h3>
             <ul>
                <li>
-                  Stručna praksa u <a id="url" href="https://www.enea.com/">Enea</a>
+                  Stručna praksa u <a id="url" href="https://hr.linkedin.com/company/dice-digital-innovation-center">DICE Digital Innovation Centre d.o.o.</a>
+               </li>
+               <li>
+                  Hrvatski Telekom <a id="url" href="https://www.t.ht.hr/">Agent za teleprodaju i savjetovanje privatnih korisnika</a>
                </li>
             </ul>
          </div>
       </div>
       <div class="project-container">
          <div class="project">
-            <h3 id="title"></h3>
+            <h3 id="title"><RouterLink to="/marijagrgic/projekti" id="url" >PROJEKTI</RouterLink></h3>
+            <ul>
+               <li>
+                  Statistika košarkaških igrača
+               </li>
+               <li>
+                  Predikcija žanra filma
+               </li>
+               <li>
+                  KK Županja Web Shop
+               </li>
+            </ul>
+
          </div>
       </div>
 
       </div>
    </div>
-   <Footer></Footer>
-</div>
 
+</div>
 
 
 </template>
