@@ -207,13 +207,44 @@ img{
     gap: 15px;
 }
 
+.project-container-big {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .project-image {
     width: 100%;
     object-fit: cover;
     height: 300px;
     filter: drop-shadow(5px  5px 0px #000);
+    cursor: pointer;
+}
+
+.project-image-big {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    filter: drop-shadow(5px  5px 0px #000);
+    cursor: pointer;
 }
 
 .project-link {
     text-decoration: none;
+}
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video {
+    width: 854px;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 0px #000);
 }

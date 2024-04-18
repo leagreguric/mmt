@@ -1,13 +1,8 @@
 <script setup>
 import './styles/style.css'
-import Projekti from '../Marija/Projekti.vue';
-import Footer from '../Footer/Footer.vue';
+import Projekti from '../Marija/ProjektiMarija.vue';
+import FooterMarija from '../Footer/FooterMarija.vue';
 </script>
-
-
-
-
-
 <template>
 
    <div class="container" id="txt">
@@ -137,8 +132,9 @@ import Footer from '../Footer/Footer.vue';
       </div>
 
       </div>
+      
    </div>
-
+   <FooterMarija></FooterMarija>
 </div>
 
 

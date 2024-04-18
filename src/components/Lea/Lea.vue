@@ -2,6 +2,9 @@
 import './styles/style.css'
 import Projekti from '../Lea/Projekti.vue';
 import Footer from '../Footer/Footer.vue';
+import VideoPlayer from '../Video/VideoPlayer.vue';
+
+import banova from '../../assets/Banova Jaruga.mp4'
 </script>
 
 
@@ -125,7 +128,9 @@ import Footer from '../Footer/Footer.vue';
       </div>
 
       </div>
+      
    </div>
+   <VideoPlayer :videoUrl="banova"></VideoPlayer>
    <Footer></Footer>
 </div>
 

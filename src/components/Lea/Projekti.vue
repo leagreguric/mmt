@@ -4,7 +4,8 @@ import Project from '../Project/Project.vue';
 import { ref } from 'vue';
 const hexMoved = ref(false);
 const subtextVisible = ref([false, false, false]);
-import lea from "../../assets/20231011_133254.jpg"
+import handGestureImage from "../../assets/20231011_133254.jpg"
+import handGestureImageBig from "../../assets/line.jpg"
 </script>
 
 <template>
@@ -18,29 +19,11 @@ import lea from "../../assets/20231011_133254.jpg"
                 strojnog učenja. Cilj projekta je omogućiti računalima
                  da prepoznaju i interpretiraju gestikulacije ruku, što može imati široku primjenu u raznim područjima kao što su upravljanje sučeljem, virtualna stvarnost, robotika, i slično.
             "
-        :imageUrl="lea"
+        :imageUrl="handGestureImage"
+        :imageUrlBig="handGestureImageBig"
         url="https://github.com/leagreguric/HandGestureRecognition"
         ></Project>
-        <Project
-        title="HAND GESTURE RECOGNITION"
-        description="    Ovaj projekt je implementacija sustava za 
-                prepoznavanje gestikulacija ruku pomoću tehnologija 
-                strojnog učenja. Cilj projekta je omogućiti računalima
-                 da prepoznaju i interpretiraju gestikulacije ruku, što može imati široku primjenu u raznim područjima kao što su upravljanje sučeljem, virtualna stvarnost, robotika, i slično.
-            "
-        :imageUrl="lea"
-        url="https://github.com/leagreguric/HandGestureRecognition"
-        ></Project>
-        <Project
-        title="HAND GESTURE RECOGNITION"
-        description="    Ovaj projekt je implementacija sustava za 
-                prepoznavanje gestikulacija ruku pomoću tehnologija 
-                strojnog učenja. Cilj projekta je omogućiti računalima
-                 da prepoznaju i interpretiraju gestikulacije ruku, što može imati široku primjenu u raznim područjima kao što su upravljanje sučeljem, virtualna stvarnost, robotika, i slično.
-            "
-        :imageUrl="lea"
-        url="https://github.com/leagreguric/HandGestureRecognition"
-        ></Project>
+        
       </div>
       </div>
       <Footer></Footer>
