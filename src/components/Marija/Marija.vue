@@ -1,5 +1,5 @@
 <script setup>
-import './styles/style.css'
+
 import Projekti from '../Marija/ProjektiMarija.vue';
 import FooterMarija from '../Footer/FooterMarija.vue';
 </script>

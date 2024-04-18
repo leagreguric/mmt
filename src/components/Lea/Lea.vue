@@ -3,8 +3,12 @@ import './styles/style.css'
 import Projekti from '../Lea/Projekti.vue';
 import Footer from '../Footer/Footer.vue';
 import VideoPlayer from '../Video/VideoPlayer.vue';
-
+import ProfileImage from '../ProfileImage/ProfileImage.vue';
 import banova from '../../assets/Banova Jaruga.mp4'
+
+
+import leaSlika from '../../assets/20231011_133254.jpg'
+import leaSlikaBig from '../../assets/line.jpg'
 </script>
 
 
@@ -37,20 +41,13 @@ import banova from '../../assets/Banova Jaruga.mp4'
             </div>
             <RouterLink to="/leagreguric/projekti" class="router-button">MOJI PROJEKTI</RouterLink>
    </div>
-      <div class="image-container">
-         <div class="image"><img src="../../assets/20231011_133254.jpg" id="slika"></div>
-         <ul id="list">
-               <li id="list">
-                  Datum rođenja: 12.07.2000.
-               </li>
-               <li id="list">
-                  Mjesto rođenja: Zagreb
-               </li>
-               <li id="list">
-                  Mjesto stanovanja: Osijek
-               </li>
-            </ul>
-      </div>
+      <ProfileImage
+      :imageUrl="leaSlika"
+      :imageUrlBig="leaSlikaBig"
+      datumRodenja="12.07.2000."
+      mjestoRodenja="Zagreb"
+      mjestoStanovanja="Banova Jaruga"
+      ></ProfileImage>
    </div>
    <div class="work">
       <div class="row-1">
@@ -130,7 +127,9 @@ import banova from '../../assets/Banova Jaruga.mp4'
       </div>
       
    </div>
-   <VideoPlayer :videoUrl="banova"></VideoPlayer>
+   <VideoPl
+   
+   ayer :videoUrl="banova"></VideoPl>
    <Footer></Footer>
 </div>
 

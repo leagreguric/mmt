@@ -78,13 +78,12 @@
     align-items: center;
     background-color:whitesmoke;
     align-self: flex-end;
-    height: 450px;
-    width: 350px;
     margin-right: 200px;
     margin-top: 100px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     color:#444444;
+    padding: 25px;
 }
 
 .audio{
@@ -247,4 +246,11 @@ img{
     width: 854px;
     border-radius: 10px;
     filter: drop-shadow(5px 5px 0px #000);
+}
+
+.profile-image-big {
+    width: 550px;
+    height: 650px;
+    border-radius: 10px;
+    object-fit: cover;
 }
