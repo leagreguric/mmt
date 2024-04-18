@@ -96,7 +96,8 @@ img{
 }
 
 .image{
-    background-color:whitesmoke;    
+    background-color:whitesmoke;   
+    cursor: pointer; 
 }
 
 #list{
@@ -253,4 +254,5 @@ img{
     height: 650px;
     border-radius: 10px;
     object-fit: cover;
+    cursor: pointer;
 }

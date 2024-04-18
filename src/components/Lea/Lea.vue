@@ -5,15 +5,9 @@ import Footer from '../Footer/Footer.vue';
 import VideoPlayer from '../Video/VideoPlayer.vue';
 import ProfileImage from '../ProfileImage/ProfileImage.vue';
 import banova from '../../assets/Banova Jaruga.mp4'
-
-
-import leaSlika from '../../assets/20231011_133254.jpg'
-import leaSlikaBig from '../../assets/line.jpg'
+import leaSlika from '../../assets/lea_mala.png'
+import leaSlikaBig from '../../assets/lea_velika.png'
 </script>
-
-
-
-
 
 <template>
 
